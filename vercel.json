@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://music-api-pi-navy.vercel.app/:match*"
+    }
+  ],
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--openssl-legacy-provider"
+    }
+  },
+  "installCommand": "npm install --legacy-peer-deps"
+} 
